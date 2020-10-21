@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UÑAS,NAILS,NAILS ART,UÑAS ESCULPIDAS,UÑAS DECORADAS,UÑAS 2020,PAGINAS DE UÑAS">
+    <meta name="description" content="Si buscás un cambio y disfrutar un dia para vos...Yumara Nails es la mejor elección">
+    <title>Contacto</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS propio -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos1.css">
+</head>
+<body>
+    <header>
+        <!-- header, con nombre y logo del proyecto que lleva a index--> 
+        <a href="index.html"> <img class="img-fluid" src="img/Logo Final.jpeg" alt="Logo"> </a>
+        <h1> YUMARA NAILS </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <!-- nav, menú del proyecto -->
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Yumara Nails</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html"> Inicio
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Nosotros.html"> Nosotros </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Servicios.html"> Servicios </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Opiniones.html"> Opiniones </a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Contacto.html"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="contacto">
+        <!-- main, con formulario para contacto -->
+      <div class="row">
+        <div class="col-md-7">
+          <form action="#" method="post">
+              <fieldset>
+                <legend> <h2> Yumara Nails </h2> </legend>
+                  <p> Para contactarte con nosotros o pedir un turno no dudes en dejarnos un mensaje, te responderemos a la brevedad! </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="nombre_ape"> Nombre y Apellido:</label>
+                      <input type="text" name="nombre_ape"/>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="mail"> E-Mail: </label>
+                      <input type="email" name="mail">
+                    </div>  
+                  </div>
+                  <div>
+                  <div class="row">
+                    <div class="col-md-6">  
+                      <label for="servicio"> Servicio a consultar: </label>
+                      <select name="servicio">
+                          <option value="gel"> Estructura en gel </option>
+                          <option value="acrilico"> Estructura en acrilico </option>
+                          <option value="kapping"> Kapping gel </option>
+                          <option value="esmaltado semi"> Esmaltado semipermanente </option>
+                          <option value="sist dual"> Sistema dual </option>
+                          <option value="pies"> Belleza de pies </option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">  
+                      <label for="mensaje"> Mensaje: </label>
+                      <textarea name="mensaje" rowrs="8"></textarea>
+                    </div> 
+                  </div>
+                  <div> 
+                      <input type="submit" name="submit" value="enviar">
+                  </div>
+              </fieldset>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <img class="img-fluid" src="img/contacto.jpg" alt="frase">
+        </div>
+      </div> 
+      <div>
+        <h3>  ADEMÁS PODÉS ENCONTRARNOS EN NUESTRAS REDES SOCIALES ! </h3>
+      </div>
+      <div>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">
+            <img class="img-fluid" src="img/facebook.png" alt="facebook"> 
+            <a href="https://www.facebook.com/yumara.nails"> Yumara.nails </a>
+          </li>
+          <li class="list-group-item">
+            <img class="img-fluid" src="img/instagram.png" alt="instagram"> 
+            <a href="https://www.instagram.com/yumara.nails/?hl=es-la"> Yumara.nails </a>
+          </li>
+          <li class="list-group-item">
+            <img class="img-fluid" src="img/whatsapp.png" alt="whatsapp"> 
+            <a href="https://api.whatsapp.com/send?phone=1161050660"> 1161050660 </a>
+          </li>
+        </ul>
+      </div>     
+    </main>
+
+    <footer class="footer text-faded text-center">
+        <!-- footer, se informa nombre de la creadora de la página -->
+          <div class="container">
+            <p class="m-0 small">Copyright &copy; Camila Murua</p>
+          </div>
+      </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
