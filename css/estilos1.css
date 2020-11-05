@@ -1,16 +1,13 @@
 /* Body General */
 body {
-  background-image: url("../img/fondo 2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  font-family: 'Montserrat', sans-serif; }
+  background-image: linear-gradient(to bottom right, #8bcdcd, #f1d4d4, #c3aed6);
+  font-family: 'Kufam', cursive; }
 
 /* Header */
 header {
-  color: black;
-  font-style: italic;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -18,8 +15,8 @@ header {
   padding-bottom: 2%; }
   header img {
     border-radius: 90%;
-    height: 100px;
-    width: 100px; }
+    height: 125px;
+    width: 125px; }
   header h1 {
     display: inline-block;
     padding: 1rem 1rem;
@@ -49,11 +46,15 @@ main {
   font-style: oblique;
   text-align: center;
   width: auto;
-  margin: 2rem;
   padding: 2rem;
   position: absolute;
   background-color: rgba(250, 219, 240, 0.924);
-  border-radius: 2%; }
+  border-radius: 2%;
+  margin-top: 10%;
+  margin-right: 10%;
+  -webkit-box-shadow: 10px 3px 35px 0px rgba(110, 110, 110, 0.55);
+  -moz-box-shadow: 10px 3px 35px 0px rgba(110, 110, 110, 0.55);
+  box-shadow: 10px 3px 35px 0px rgba(110, 110, 110, 0.55); }
   .container__promo p {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem; }
@@ -74,9 +75,13 @@ main {
 /* Carrusel propiedades */
 .carousel-item {
   height: 50%;
-  width: 80%; }
+  width: 80%;
+  margin-bottom: 10%; }
   .carousel-item img {
     border-radius: 8%; }
+  .carousel-item .img-thumbnail {
+    background-color: #7579e7;
+    border: 1px solid #7579e7; }
 
 .carousel-control-prev {
   left: -12%;
@@ -112,7 +117,6 @@ main {
   .ContNosotros__nosotros li {
     padding: 1.5rem;
     text-align: center;
-    background-color: rgba(250, 219, 240, 0.924);
     border-radius: 2%; }
 
 /* Nosotros -- imagenes y videos */
@@ -120,36 +124,17 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
-  padding-bottom: 3%;
-  height: 38vh;
-  width: 28vw;
-  margin-left: 100%; }
+  padding-bottom: 5%;
+  margin-right: 3.5%; }
   .nosotros__imagenes img {
-    margin-right: 9%;
-    margin-top: 5%; }
+    margin: 5%;
+    height: 35vh;
+    width: 23vw; }
 
 /* Nosotros -- transicion de imagenes */
 .transicion :hover {
   transform: scale(1.1, 1.1);
   transition: all 2s; }
-
-@keyframes big {
-  0% {
-    width: 450px;
-    height: 350px; }
-  25% {
-    width: 500px;
-    height: 400px; }
-  50% {
-    width: 550px;
-    height: 450px; }
-  75% {
-    width: 500px;
-    height: 400px; }
-  100% {
-    width: 450px;
-    height: 350px; } }
 
 /* Opiniones -- Comentarios */
 #my-servi {
@@ -166,7 +151,10 @@ main {
     #my-servi .row .card {
       width: 85% !important;
       height: 100%;
-      background-color: rgba(250, 219, 240, 0.924); }
+      background-color: rgba(246, 222, 239, 0.924);
+      -webkit-box-shadow: 10px 14px 24px 0px rgba(102, 102, 102, 0.5);
+      -moz-box-shadow: 10px 14px 24px 0px rgba(102, 102, 102, 0.5);
+      box-shadow: 10px 14px 24px 0px rgba(102, 102, 102, 0.5); }
       #my-servi .row .card .card-text {
         padding-top: 8%; }
       #my-servi .row .card .card-title {
@@ -174,7 +162,7 @@ main {
         font-weight: bold;
         text-align: center !important; }
       #my-servi .row .card .list-group-item {
-        background-color: rgba(244, 200, 255, 0.959); }
+        background-color: rgba(229, 200, 236, 0.959); }
       #my-servi .row .card img {
         height: 40vh;
         width: 20vw;
@@ -190,7 +178,10 @@ main {
 
 .accordion {
   width: 94%;
-  padding-left: 4%; }
+  margin-left: 3%;
+  -webkit-box-shadow: 10px 3px 33px 0px rgba(110, 110, 110, 0.89);
+  -moz-box-shadow: 10px 3px 33px 0px rgba(110, 110, 110, 0.89);
+  box-shadow: 10px 3px 33px 0px rgba(110, 110, 110, 0.89); }
   .accordion .card {
     background-color: rgba(250, 219, 240, 0.924);
     padding: 2%; }
@@ -206,8 +197,7 @@ main {
   margin: 3%;
   margin-left: 4%;
   font-size: 1.1rem;
-  width: 90%;
-  background-color: rgba(250, 219, 240, 0.924); }
+  width: 90%; }
   .top h3 {
     font-size: 1.5rem; }
   .top form {
@@ -226,10 +216,13 @@ main {
 /* Contacto -- Main Formulario */
 .contacto {
   padding: 2%;
-  background-color: rgba(250, 219, 240, 0.924);
   margin-bottom: 2%; }
   .contacto h2 {
     text-align: center; }
+  .contacto .boton-enviar {
+    background-color: rgba(250, 175, 226, 0.979);
+    border: #f679f6;
+    margin-left: 4%; }
   .contacto label {
     padding-top: 6%; }
   .contacto input {
@@ -271,16 +264,30 @@ main {
 
 /* Footer */
 footer {
-  border-top: rgba(228, 226, 226, 0.924) 0.5px solid;
+  border-top: rgba(139, 139, 139, 0.972) 0.5px solid;
   padding: 3%;
   color: black !important; }
 
+@media (max-width: 991px) {
+  header {
+    visibility: hidden; }
+  #mainNav {
+    margin-top: -18%; }
+  .carousel-inner {
+    margin-top: 10%; }
+  .top p {
+    margin-top: 5%; }
+  .top h3 {
+    margin-top: 5%; }
+  .nosotros__imagenes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+    .nosotros__imagenes img {
+      width: 45%;
+      height: 45%; } }
+
 @media (max-width: 1200px) {
-  body {
-    background-image: url("../img/fondo 2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; }
   .ContNosotros {
     display: flex;
     flex-direction: column;
@@ -323,26 +330,15 @@ footer {
     margin-left: 7%; }
   .carousel-control-prev {
     left: -8%;
-    margin-top: 80%;
+    margin-top: 70%;
     opacity: 1; }
   .carousel-control-next {
     right: -2%;
-    margin-top: 80%;
+    margin-top: 70%;
     opacity: 1; }
   .contacto img {
     margin-left: 10%;
-    width: 50%; }
-  .ContNosotros__nosotros .container .nosotros__imagenes {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60%;
-    margin-left: 80%;
-    margin-bottom: -40%; }
-    .ContNosotros__nosotros .container .nosotros__imagenes img {
-      margin-top: 10%;
-      width: 100%; }
-  .ContNosotros__nosotros .container .minimo {
-    visibility: hidden; } }
+    width: 50%; } }
 
 @media (min-width: 767px) and (max-width: 1200px) {
   .container__promo {
