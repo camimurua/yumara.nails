@@ -1,5 +1,7 @@
+/* VARIABLES */
 $color: black;
 
+/* MIXIN */
 @mixin nosotros {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@ $color: black;
     text-align: center;
 }
 
-/* Body General */
+/* BODY GENERAL */
 body {
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +24,7 @@ body {
     font-family: 'Kufam', cursive;
 }
 
-/* Header */
+/* HEADER */
 header {
     display: flex;
     flex-wrap: nowrap;
@@ -42,6 +44,7 @@ header {
     }
 }
 
+/* MENU NAV */
 #mainNav {
     position: sticky;
     top: 0.4px;
@@ -56,13 +59,15 @@ header {
         background-color: #c3aed6;
     }
 }
-/* Main General*/
+/* MAIN GENERAL */
 main {
     flex-wrap: nowrap;
     .row {
         padding-bottom: 3%;
     }
 }
+
+/* INDEX PROMO */
 .container__promo {
     color: $color;
     font-style: oblique;
@@ -82,21 +87,24 @@ main {
         padding-bottom: 0.7rem;
     }
     .section-heading {
-        text-transform: uppercase; }
+        text-transform: uppercase; 
+        }
         .section-heading .section-heading-upper {
           display: block;
           font-size: 1rem;
-          font-weight: 800; }
+          font-weight: 800; 
+        }
         .section-heading .section-heading-lower {
           display: block;
           font-size: 3rem;
-          font-weight: 100; }
+          font-weight: 100; 
+        }
     .btn {
         background-color:#c3aed6;
         border-color: #c3aed6;
     }
 }
-/* Carrusel propiedades */
+/* INDEX CARRUSEL */
 .carousel-item {
     height: 50%;
     width: 80%;
@@ -118,7 +126,7 @@ main {
     opacity: 0.5;
 }
 
-/* Main -- Nosotros Info */
+/* NOSOTROS INFO */
 .ContNosotros {
     @include nosotros;
 }
@@ -143,7 +151,7 @@ main {
         border-radius: 2%;
     }
 }
-/* Nosotros -- imagenes y videos */
+/* NOSOTROS IMAGENES */
 .nosotros__imagenes {
         display: flex;
         flex-direction: row;
@@ -157,7 +165,7 @@ main {
         }
 }
 
-/* Nosotros -- transicion de imagenes */
+/* NOSOTROS TRANSICION */
 .transicion {
     :hover {
         transform:scale(1.1, 1.1);
@@ -166,7 +174,7 @@ main {
 }
 
 
-/* Opiniones -- Comentarios */
+/* SERIVICIOS */
 #my-servi {
     font-size: 0.9rem;
     h2 {
@@ -193,7 +201,7 @@ main {
             .card-title {
                 font-size: 1.1rem;
                 font-weight: bold;
-                text-align: center !important;
+                text-align: center;
             }
             .list-group-item {
                 background-color: rgba(229, 200, 236, 0.959) ;
@@ -207,6 +215,8 @@ main {
         }
     }    
 }
+
+/* SERVICIOS ACLARACION SECTION */
 .aclaracion {
     color:  $color;
     font-size: 1rem;
@@ -215,6 +225,7 @@ main {
     padding-top: 3%;
 }
 
+/* OPINIONES */
 .accordion {
     width: 94%;
     margin-left: 3%;
@@ -259,7 +270,7 @@ main {
     }
 }
 
-/* Contacto -- Main Formulario */
+/* CONTACTO */
 .contacto {
     padding: 2%;
     margin-bottom: 2%;
@@ -323,12 +334,14 @@ main {
     }
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     border-top:  rgba(139, 139, 139, 0.972) 0.5px solid;
     padding: 3%;
-    color: $color !important;
+    color: $color;
 }
+
+/* AJUSTES PARA MEDIA QUERY */
 @media (max-width: 991px) {
     header {
         visibility: hidden;
@@ -390,6 +403,7 @@ footer {
         }
     }
 }
+
 @media (max-width: 767px) {
     .container__promo {
         left: 0;
@@ -427,6 +441,7 @@ footer {
         }
     }
 }
+
 @media (min-width: 767px) and (max-width: 1200px) {
     .container__promo {
         left: 0;
@@ -444,6 +459,7 @@ footer {
         bottom: -1rem;
     }
 }
+
 @media (max-width: 575px) {
     #my-servi {
         .row {
@@ -453,7 +469,7 @@ footer {
         .card {
             margin-left: 5%;
             .card-body {
-                height: 100% !important;
+                height: 100% ;
             }
             .card-img-top {
                 margin-left: -10%;
@@ -487,6 +503,7 @@ footer {
         opacity: 1;
     } 
 }
+
 @media (min-width: 576px) and (max-width: 1200px) {
     #my-servi {
         .row {
@@ -496,17 +513,18 @@ footer {
         }
         .card {
             margin-left: 5%;
-            width: 100% !important;
+            width: 100% ;
             .card-img-top{
                 margin-left: -4%;
                 height: 20vh !important;
             }
             .card-body {
-                height: 100% !important;
+                height: 100%;
             } 
         }    
     }   
 }
+
 @media (max-width: 691px) {
     .top {
         width: 82%;

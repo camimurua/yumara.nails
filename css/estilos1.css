@@ -1,4 +1,6 @@
-/* Body General */
+/* VARIABLES */
+/* MIXIN */
+/* BODY GENERAL */
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,7 +8,7 @@ body {
   background-image: linear-gradient(to bottom right, #8bcdcd, #f1d4d4, #c3aed6);
   font-family: 'Kufam', cursive; }
 
-/* Header */
+/* HEADER */
 header {
   display: flex;
   flex-wrap: nowrap;
@@ -23,6 +25,7 @@ header {
     font-size: 1.5rem;
     align-self: center; }
 
+/* MENU NAV */
 #mainNav {
   position: sticky;
   top: 0.4px;
@@ -35,12 +38,13 @@ header {
   #mainNav .active {
     background-color: #c3aed6; }
 
-/* Main General*/
+/* MAIN GENERAL */
 main {
   flex-wrap: nowrap; }
   main .row {
     padding-bottom: 3%; }
 
+/* INDEX PROMO */
 .container__promo {
   color: black;
   font-style: oblique;
@@ -72,7 +76,7 @@ main {
     background-color: #c3aed6;
     border-color: #c3aed6; }
 
-/* Carrusel propiedades */
+/* INDEX CARRUSEL */
 .carousel-item {
   height: 50%;
   width: 80%;
@@ -91,7 +95,7 @@ main {
   right: 9%;
   opacity: 0.5; }
 
-/* Main -- Nosotros Info */
+/* NOSOTROS INFO */
 .ContNosotros {
   display: flex;
   flex-direction: column;
@@ -119,7 +123,7 @@ main {
     text-align: center;
     border-radius: 2%; }
 
-/* Nosotros -- imagenes y videos */
+/* NOSOTROS IMAGENES */
 .nosotros__imagenes {
   display: flex;
   flex-direction: row;
@@ -131,12 +135,12 @@ main {
     height: 35vh;
     width: 23vw; }
 
-/* Nosotros -- transicion de imagenes */
+/* NOSOTROS TRANSICION */
 .transicion :hover {
   transform: scale(1.1, 1.1);
   transition: all 2s; }
 
-/* Opiniones -- Comentarios */
+/* SERIVICIOS */
 #my-servi {
   font-size: 0.9rem; }
   #my-servi h2 {
@@ -160,7 +164,7 @@ main {
       #my-servi .row .card .card-title {
         font-size: 1.1rem;
         font-weight: bold;
-        text-align: center !important; }
+        text-align: center; }
       #my-servi .row .card .list-group-item {
         background-color: rgba(229, 200, 236, 0.959); }
       #my-servi .row .card img {
@@ -169,6 +173,7 @@ main {
         padding-left: 21%;
         padding-top: 5%; }
 
+/* SERVICIOS ACLARACION SECTION */
 .aclaracion {
   color: black;
   font-size: 1rem;
@@ -176,6 +181,7 @@ main {
   padding-right: 6%;
   padding-top: 3%; }
 
+/* OPINIONES */
 .accordion {
   width: 94%;
   margin-left: 3%;
@@ -213,7 +219,7 @@ main {
     margin-top: 3%;
     margin-left: 40%; }
 
-/* Contacto -- Main Formulario */
+/* CONTACTO */
 .contacto {
   padding: 2%;
   margin-bottom: 2%; }
@@ -262,12 +268,13 @@ main {
       .contacto .list-group-horizontal .list-group-item a {
         color: black; }
 
-/* Footer */
+/* FOOTER */
 footer {
   border-top: rgba(139, 139, 139, 0.972) 0.5px solid;
   padding: 3%;
-  color: black !important; }
+  color: black; }
 
+/* AJUSTES PARA MEDIA QUERY */
 @media (max-width: 991px) {
   header {
     visibility: hidden; }
@@ -361,7 +368,7 @@ footer {
   #my-servi .card {
     margin-left: 5%; }
     #my-servi .card .card-body {
-      height: 100% !important; }
+      height: 100%; }
     #my-servi .card .card-img-top {
       margin-left: -10%;
       width: 120% !important; }
@@ -390,12 +397,12 @@ footer {
     padding-right: 5%; }
   #my-servi .card {
     margin-left: 5%;
-    width: 100% !important; }
+    width: 100%; }
     #my-servi .card .card-img-top {
       margin-left: -4%;
       height: 20vh !important; }
     #my-servi .card .card-body {
-      height: 100% !important; } }
+      height: 100%; } }
 
 @media (max-width: 691px) {
   .top {
