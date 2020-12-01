@@ -168,8 +168,8 @@ main {
       #my-servi .row .card .list-group-item {
         background-color: rgba(229, 200, 236, 0.959); }
       #my-servi .row .card img {
-        height: 40vh;
-        width: 20vw;
+        height: 35vh;
+        width: 30vw;
         padding-left: 21%;
         padding-top: 5%; }
 
@@ -224,7 +224,8 @@ main {
   padding: 2%;
   margin-bottom: 2%; }
   .contacto h2 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 5%; }
   .contacto .boton-enviar {
     background-color: rgba(250, 175, 226, 0.979);
     border: #f679f6;
@@ -249,11 +250,8 @@ main {
   .contacto .col-md-6 {
     display: flex;
     flex-direction: column; }
-  .contacto h3 {
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 1.4rem; }
+  .contacto iframe {
+    padding-top: 5%;}
   .contacto .list-group-horizontal {
     text-align: center;
     margin-left: 5%; }
